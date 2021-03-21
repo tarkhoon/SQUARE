@@ -24,12 +24,15 @@
         </div>
     </div>
     <div id="choose">
-        <div id="avatar"><a>Аватар</a></div>
-        <div id="photo"><a>Фото</a></div>
-        <div id="reviews"><a>Отзывы</a></div>
-        <div id="clarification"><a>Уточнения</a></div>
+        <div onclick="avatar()"><a>Аватар</a></div>
+        <div id="photo" class="photo-non-active" onclick="photo()"><a>Фото</a></div>
+        <div id="reviews" class="reviews-non-active" onclick="reviews()"><a>Отзывы</a></div>
+        <div id="clarification" class="clarification-non-active" onclick="clarification()"><a>Уточнения</a></div>
     </div>
 
+    <div id="avatar" class="avatar-non-active">
+        <div id="avatarmenu"></div>    
+    </div>
 
     <script src="js/profile.js"></script>
 </body>
