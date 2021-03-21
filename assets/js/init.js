@@ -10,8 +10,8 @@ let location_timeout = setTimeout("geolocFail()", 10000);
             key: '4063dfb1-1a15-4509-a767-c396afc8ae3b',
             style: 'c080bb6a-8134-4993-93a1-5b4d8c36a59b'
         });
-        const control = new mapgl.Control(map, controlContent, {
-        position: 'topLeft',});
+        /*const control = new mapgl.Control(map, controlContent, {
+        position: 'topLeft',});*/
         const status = control.getContainer().querySelector('#status');
     let circle;
     status.textContent = '';
@@ -30,7 +30,7 @@ let location_timeout = setTimeout("geolocFail()", 10000);
     function error() {
         status.textContent = 'Unable to retrieve your location';
     }
-    function geoFindMe() {
+    /*function geoFindMe() {
         if (!navigator.geolocation) {
             status.textContent = 'Geolocation is not supported by your browser';
         } else {
@@ -42,13 +42,13 @@ let location_timeout = setTimeout("geolocFail()", 10000);
         .getContainer()
         .querySelector('#find-me')
         .addEventListener('click', geoFindMe);;
-        ;
+        ;*/
         
 });
 
 
 
-const controlContent = `
+/*const controlContent = `
     <div class="buttonRoot" id="find-me">
         <button class="button">
             <svg
@@ -65,8 +65,14 @@ const controlContent = `
         </button>
     </div>
     <p id="status"></p>
-`;
+`;*/
+function search(){
+    let form = document.forms.search;
+    form.oninput = function() {
+    document.getElementById('result').innerHTML = form.value;
+  };
+}
 
-
-
-
+function menu(){
+    $('div').toggleClass('change-mode');
+}

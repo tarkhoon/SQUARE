@@ -7,7 +7,29 @@
 
     </head>
     <body>
-        <div id="search"></div>
+        <div id="search">
+            <div id="burger" onclick="menu()">
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+            </div>
+            
+            <input id="search1" name="search" type="text" onkeyup="search()"><span id="result"></span>
+        </div>
+        <div class="menu">
+            <div id="profile"></div>
+            <nav class="overlayMenu">  
+                <ul role="menu">
+                    <li><a href="#" role="menuitem">Друзья</a></li>
+                    <li><a href="#" role="menuitem">Выбор города</a></li>
+                    <li><a href="#" role="menuitem">Поиск проезда</a></li>
+                    <li><a href="#" role="menuitem">Сообщения</a></li>
+                    <li><a href="#" role="menuitem">Избранное</a></li>
+                    <li><a href="#" role="menuitem">Интересные места</a></li>
+                    <li><a href="#" role="menuitem">Дорожное событие</a></li>
+                </ul> 
+            </nav>
+        </div>
         <div id="container"></div>
         
         
