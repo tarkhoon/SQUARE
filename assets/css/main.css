@@ -52,7 +52,7 @@ body,
 }
 .mapgl_1uV6SAc5RT5nqIsrNUcIfw{
     top: 400px !important;
-    right: 10px !important;
+    left: calc(100% - 42px) !important;
 }
 
 #search1,#search1:active{
