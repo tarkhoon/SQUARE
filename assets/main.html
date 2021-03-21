@@ -1,34 +1,19 @@
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width" initial-scale=1.0>
-    <title>2GIS</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="/css/fav.png" type="image/png">
-    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
-    <script type="text/javascript">
-        var map;
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/main.css">
 
-        DG.then(function () {
-            map = DG.map('map', {
-                center: [54.98, 82.89],
-                zoom: 13
-            });
-
-            DG.marker([54.98, 82.89]).addTo(map).bindPopup('Вы кликнули по мне!');
-        });
-    </script>
-</head>
-
-<body>
-
+    </head>
+    <body>
+        <div id="search"></div>
+        <div id="container"></div>
         
-            <div id="map" style="width:500px; height:400px"></div>
-
-
-</body>
-
-
-
-
+        
+        
+        <script src="https://mapgl.2gis.com/api/js/v1"></script>
+        <script src="js/init.js"></script>
+        <script src="https://unpkg.com/@2gis/mapgl-directions@^1/dist/directions.js"></script>
+    </body>
 </html>
