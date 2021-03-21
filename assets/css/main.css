@@ -47,8 +47,12 @@ body,
     z-index: 100;
 }
 
-.mapgl_o9F7cjpOIBahfU_wE8RMp{
-    top: 100px !important;
+.mapgl_1fPsFwMV9ObLP13-K761VI{
+    top: 300px !important;
+}
+.mapgl_1uV6SAc5RT5nqIsrNUcIfw{
+    top: 400px !important;
+    right: 10px !important;
 }
 
 #search1,#search1:active{
@@ -60,17 +64,18 @@ line-height: 3em;
 height: 100%;
 width: (100%-40px);
 margin-left: 40px;
+position: absolute;
 }
 
 #burger {
     width: 40px;
-    height: 45px;
+    height: 100%;
     position: relative;
 }
 #burger span {
     display: block;
     position: absolute;
-    height: 20%;
+    height: 10%;
     width: 80%;
     margin-left: 10%;
     background: #1ad342;
@@ -79,13 +84,13 @@ margin-left: 40px;
     left: 0;
 }
 #span1{
-    margin-top: 25%;
+    margin-top: 35%;
 }
 #span2{
-    margin-top: 45%;
+    margin-top: 55%;
 }
 #span3{
-    margin-top: 65%;
+    margin-top: 75%;
 }
 .menu{
     display: block;
@@ -94,6 +99,58 @@ margin-left: 40px;
     visibility: hidden;
 }
 .change-mode{
+    display: block;
+    position: absolute;
     z-index: 100;
     visibility: visible;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    background: #fff;
+    width: 80vw;
+}
+#profile{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    background: #fff;
+    border-bottom: 1px solid grey;
+
+}
+#back{
+    background-image: url(410585883.png);
+    width: 40px;
+    height: 40px;
+    z-index: 101;
+    margin-left: calc(100% - 60px);
+    margin-top: 15px;
+    position: absolute;
+}
+#prph{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#name{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.overlayMenu ul li{
+    height: 50px;
+    list-style-type: none;
+
+}
+.overlayMenu ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: none;
+}
+#settings{
+    margin-top: 50px;
+}
+#settings li a{
+    color: darkgray;
 }

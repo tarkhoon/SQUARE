@@ -7,17 +7,46 @@
 
     </head>
     <body>
+
         <div id="search">
+            
             <div id="burger" onclick="menu()">
                 <span id="span1"></span>
                 <span id="span2"></span>
                 <span id="span3"></span>
             </div>
             
-            <input id="search1" name="search" type="text" onkeyup="search()"><span id="result"></span>
+            <input id="search1" name="search" 
+            type="text" onkeyup="search()"
+            placeholder="Поиск...">
+            <span id="result"></span>
+
         </div>
-        <div class="menu">
-            <div id="profile"></div>
+
+        <div id="menu" class="menu">
+
+            <div id="profile">
+
+                <a href="profile.html">
+                    <img src="css/profile.png"style="
+                    height: 80%;
+                    margin-right: 0px;"
+                    id="prph" >
+                </a>
+
+                <div id="name">Name Name</div>
+                
+                <div id="back">
+
+                        <img src="css/410585883.png"style="
+                        width: 100%;
+                        height: 100%;
+                        margin-right: 0px;" onclick="menuback()">
+                
+                </div>
+
+            </div>
+
             <nav class="overlayMenu">  
                 <ul role="menu">
                     <li><a href="#" role="menuitem">Друзья</a></li>
@@ -28,8 +57,16 @@
                     <li><a href="#" role="menuitem">Интересные места</a></li>
                     <li><a href="#" role="menuitem">Дорожное событие</a></li>
                 </ul> 
+                <ul id="settings" role="settings">
+                    <li><a href="#" role="menuitem">Настройки</a></li>
+                    <li><a href="#" role="menuitem">Реклама в 2ГИС</a></li>
+                    <li><a href="#" role="menuitem">Добавить организацию</a></li>
+                    <li><a href="#" role="menuitem">Сообщить об ошибке</a></li>
+                    <li><a href="#" role="menuitem">О программе</a></li>
+                </ul> 
             </nav>
         </div>
+
         <div id="container"></div>
         
         
